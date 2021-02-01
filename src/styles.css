@@ -1,0 +1,14 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.App form {
+  display: flex;
+  flex-direction: column;
+}
+
+.App form * {
+  padding: 20px;
+  border: none;
+}
