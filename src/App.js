@@ -11,7 +11,7 @@ export default function App() {
 
     let title = event.target.title.value;
     let content = event.target.content.value;
-
+    
     event.target.title.value = "";
     event.target.content.value = "";
 
@@ -30,7 +30,7 @@ export default function App() {
 
   function handleDeleteNote(i) {
     if (confirm("Tem certeza que deseja deletar esta nota?")) {
-      newNotes = [...notes];
+      let newNotes = [...notes];
       newNotes.splice(i, 1);
       setNotes(newNotes);
     }
